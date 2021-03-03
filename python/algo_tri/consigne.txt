@@ -1,0 +1,36 @@
+1/ Nous souhaitons écrire deux fonctions mutuellement récursives estPair(n) et estImpair(n). Nous souhaitons définir estPair(n) et estImpair(n) dans deux fonctions différentes et selon la parité de n-1.
+
+2/ Sans considérer les méthodes prédéfinies en Python, nous souhaitons créer par nous même deux fonctions itératives :
+a - une première qui retourne le plus petit élément d'une liste
+b - une seconde qui effectue un tri sélection, à partir d'une liste non triée l1, en utilisant la fonction définie en (a) et sans effet de bord sur l1. Le tri sélection par l'exemple :
+
+liste initiale              liste triée
+[14,5,7,12,3,4,5]            [3]
+[14,5,7,12,3,4,5]            [3,4]
+[14,5,7,12,3,4,5]            [3,4,5]
+[14,5,7,12,3,4,5]            [3,4,5,5]
+[14,5,7,12,3,4,5]            [3,4,5,5,7]
+[14,5,7,12,3,4,5]            [3,4,5,5,7,12]
+[14,5,7,12,3,4,5]            [3,4,5,5,7,12,14]
+
+3/ Bonus : vous pouvez également coder le tri par insertion et le tri bulle (permutations deux à deux).
+
+
+Le tri insertion par l'exemple :
+liste initiale              liste triée
+[14,5,7,12,3,4,5]            [14]
+[14,5,7,12,3,4,5]            [5,14]
+[14,5,7,12,3,4,5]            [5,7,14]
+[14,5,7,12,3,4,5]            [5,7,12,14]
+[14,5,7,12,3,4,5]            [3,5,7,12,14]
+[14,5,7,12,3,4,5]            [3,4,5,7,12,14]
+[14,5,7,12,3,4,5]            [3,4,5,5,7,12,14]
+
+Le tri bulle par l'exemple :
+[14,5,4,12,3,4,2]            [14,5,4,12,3,4,2]
+[14,5,4,12,3,4,2]            [5,4,12,3,4,2,14]
+[14,5,4,12,3,4,2]            [4,5,3,4,2,12,14]
+[14,5,4,12,3,4,2]            [4,3,4,2,5,12,14]
+[14,5,4,12,3,4,2]            [3,4,2,4,5,12,14]
+[14,5,4,12,3,4,2]            [3,2,4,4,5,12,14]
+[14,5,4,12,3,4,2]            [2,3,4,4,5,12,14]
